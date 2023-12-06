@@ -3,7 +3,14 @@ export default {
   content: ['./public/**/*.html',
   './src/**/*.tsx',],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'creepster': ['Creepster', 'cursive'],
+        'inter': ['Inter', 'sans-serif'],
+        'pacifico': ['Pacifico', 'cursive'],
+        'space-grotesk': ['Space Grotesk', 'sans-serif'],
+      },
+    },
   },
   plugins: [],
 }

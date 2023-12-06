@@ -2,7 +2,8 @@ import React from 'react'
 
 const video : React.FC = () => {
   return (
-    <>
+    <div className='absolute inset-0 w-full h-full'>
+   
     <video
       className='absolute inset-0 w-full h-full object-cover object-center'
       autoPlay
@@ -14,7 +15,8 @@ const video : React.FC = () => {
     </video>
     <div className='relative bg-blue-500 w-screen h-screen bg-opacity-50 p-4 z-10'>
     </div>
-  </>
+    
+  </div>
   )
 }
 
