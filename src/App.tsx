@@ -12,6 +12,7 @@ import { RootState } from "./readuxStore/store";
 
 const App: React.FC = () => {
   const currentState = useSelector((state: RootState) => state.climate.current);
+  const currentLocation = useSelector((state : RootState) => state.climate.location)
 
   const todayclimate = currentState?.condition.text !== undefined ? currentState.condition.text : 'NILL';
   const temp = currentState?.temp_c !== undefined ? currentState.temp_c : "0";
@@ -31,7 +32,7 @@ const App: React.FC = () => {
      
       <p className='font-pacifico absolute top-0 right-0 mt-4 mr-4 text-2xl md:text-xl lg:text-2xl xl:text-2xl text-white z-10'>
         <FontAwesomeIcon className='text-white mr-3 w-4' icon={faLocationDot} />
-        Kannur
+        {currentLocation?.name}
       </p>
       
       <div className='flex items-center justify-center h-full relative z-10'>
