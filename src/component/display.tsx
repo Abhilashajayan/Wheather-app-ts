@@ -18,7 +18,5 @@ export const Display = ({condition , temps}:temp) => {
       </span>
     </h1>
   </div>
-  
-  
   )
 }

@@ -6,6 +6,8 @@ import { useDispatch } from "react-redux";
 import apiOptions from '../api/wheather'
 import { setCurrent, setForecast, setLocation } from "../readuxStore/slice";
 
+
+
 export const Search: React.FC = () => {
   const[inputVal , setinputVal] = useState<string>("");
   const dispatch = useDispatch();
